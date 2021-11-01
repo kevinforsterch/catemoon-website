@@ -1,21 +1,21 @@
-import React from 'react';
-import styled from 'styled-components';
-import { Intro, Info, Counter, Loading } from '../components';
-import { useAppContext } from '../context/app_context';
+import React from "react"
+import styled from "styled-components"
+import { Intro, Info, Counter, Loading } from "../components"
+import { useAppContext } from "../context/app_context"
 
 const HomePage = () => {
-    const { isLoading } = useAppContext();
+  const { isLoading } = useAppContext()
 
-    return (
-        <MainWrapper>
-            {isLoading && <Loading />}
-            <Intro />
-            <Counter />
-            <Info />
-        </MainWrapper>
-    );
-};
+  return (
+    <MainWrapper>
+      {isLoading && <Loading />}
+      <Intro />
+      <Counter />
+      <Info />
+    </MainWrapper>
+  )
+}
 
-const MainWrapper = styled.main``;
+const MainWrapper = styled.main``
 
-export default HomePage;
+export default HomePage
