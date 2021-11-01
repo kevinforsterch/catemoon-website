@@ -45,7 +45,7 @@ const Intro = () => {
         ></div>
         <div className="container">
           <div className="intro">
-            <h2>CATEMOON STARTS NEW GENERATION OF DEFI MEME COINS</h2>
+            <h2>CATEMOON STARTS A NEW GENERATION OF DEFI MEME COINS</h2>
             <div className="image-container">
               <img src={cat1} alt="Cat On A Rocket" />
             </div>
