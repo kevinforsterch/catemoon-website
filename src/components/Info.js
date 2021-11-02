@@ -117,13 +117,6 @@ const Intro = () => {
           </div>
           <div className="text">
             <p>
-              Like most deflationary coins, CateMoon has a five percent tax per
-              transaction. Half of that will be burned and half will be
-              redistributed to our holders. So, you can sit back and hold $100
-              worth of CateMoon, watching your balance grow while we do the
-              work.
-            </p>
-            <p>
               So, it comes down to this: there are shitcoins that are simply
               replicas of the shitcoins that came before them—think of every
               doge-themed coin you’ve ever heard of. Then there are DeFi meme
