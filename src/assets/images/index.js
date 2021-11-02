@@ -8,5 +8,18 @@ import cat3 from "./cat-03.webp"
 import cat4 from "./cat-04.webp"
 import cat5 from "./cat-05.webp"
 import cat6 from "./cat-06.webp"
+import { ReactComponent as BscscanIcon } from "./bscscan-icon.svg"
 
-export { logo, introBg, bodyBg, stars, cat1, cat2, cat3, cat4, cat5, cat6 }
+export {
+  logo,
+  introBg,
+  bodyBg,
+  stars,
+  cat1,
+  cat2,
+  cat3,
+  cat4,
+  cat5,
+  cat6,
+  BscscanIcon,
+}

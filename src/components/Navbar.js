@@ -1,8 +1,9 @@
 import React from "react"
 import styled from "styled-components"
 import { FaTelegram, FaTwitter } from "react-icons/fa"
+import { BscscanIcon } from "assets/images"
 
-import logo from "../assets/images/logo.webp"
+import logo from "assets/images/logo.webp"
 
 const Navbar = () => {
   return (
@@ -10,14 +11,17 @@ const Navbar = () => {
       <nav className="container">
         <img src={logo} alt="CateMoon Logo" loading="lazy" />
         <div>
-          <a
-            href="https://t.me/joinchat/h-pU65zJ2Pw2OTg0"
-            aria-label="telegram"
-          >
+          <a href="https://t.me/CateMoonCoin" aria-label="telegram">
             <FaTelegram />
           </a>
           <a href="https://twitter.com/CateMoonToken" aria-label="twitter">
             <FaTwitter />
+          </a>
+          <a
+            href="https://bscscan.com/token/0x6244feff0ddba579346ca028adf2080d9a6511a3"
+            aria-label="bscscan"
+          >
+            <BscscanIcon />
           </a>
         </div>
       </nav>
@@ -48,6 +52,11 @@ const NavContainer = styled.header`
           @media (max-width: 425px) {
             margin-right: 16px;
           }
+        }
+
+        & > svg {
+          width: 36px;
+          height: 36px;
         }
       }
     }
