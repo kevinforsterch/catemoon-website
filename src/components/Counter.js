@@ -7,19 +7,19 @@ const Counter = () => {
       <div className="container">
         <div className="counter">
           <div className="single-counter">
-            <div>2,341,947</div>
+            <div>1</div>
             <p>Holders</p>
           </div>
           <div className="single-counter">
-            <div>2,341,947</div>
+            <div>0</div>
             <p>Price</p>
           </div>
           <div className="single-counter">
-            <div>2,107,388.581840693</div>
+            <div>100,000,000,000</div>
             <p>Supply</p>
           </div>
           <div className="single-counter">
-            <div>1,029,119.803661393</div>
+            <div>0</div>
             <p>Marketcap</p>
           </div>
         </div>
