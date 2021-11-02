@@ -11,7 +11,7 @@ const Intro = () => {
     const windowWidth = window.innerWidth
 
     const offset =
-      windowWidth < 1064 ? 0 : container.getBoundingClientRect().y / 5
+      windowWidth < 1064 ? 0 : container.getBoundingClientRect().y / 7
 
     setParallaxOffset(offset)
   }
