@@ -11,18 +11,28 @@ const Navbar = () => {
       <nav className="container">
         <img src={logo} alt="CateMoon Logo" loading="lazy" />
         <div>
-          <a href="https://t.me/CateMoonCoin" aria-label="telegram">
+          <a
+            href="https://t.me/CateMoonCoin"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="telegram"
+          >
             <FaTelegram />
           </a>
-          <a href="https://twitter.com/CateMoonToken" aria-label="twitter">
+          <a
+            href="https://twitter.com/CateMoonToken"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="twitter"
+          >
             <FaTwitter />
           </a>
-          <a
-            href="https://bscscan.com/token/0x6244feff0ddba579346ca028adf2080d9a6511a3"
+          {/* <a
+            href="https://bscscan.com/token/0x4129ba36c11290114555958276fdcfc831f8058e"
             aria-label="bscscan"
           >
             <BscscanIcon />
-          </a>
+          </a> */}
         </div>
       </nav>
     </NavContainer>
