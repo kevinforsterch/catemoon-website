@@ -20,7 +20,7 @@ const Navbar = () => {
             <FaTelegram />
           </a>
           <a
-            href="https://twitter.com/CateMoonToken"
+            href="https://twitter.com/CateMoon"
             target="_blank"
             rel="noreferrer"
             aria-label="twitter"
