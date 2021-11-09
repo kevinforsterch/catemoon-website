@@ -1,0 +1,29 @@
+@import "./variable.scss";
+
+html,
+body {
+  width: 100%;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  overflow-x: hidden;
+}
+
+#root {
+  width: 100%;
+}
+
+* {
+  outline: 0;
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-column {
+  flex-direction: column;
+}
