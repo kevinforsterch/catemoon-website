@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap");
 @import "./variable.scss";
 
 html,
@@ -8,6 +9,7 @@ body {
   padding: 0;
   outline: 0;
   overflow-x: hidden;
+  background-color: $purple;
 }
 
 #root {
@@ -17,6 +19,7 @@ body {
 * {
   outline: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 .flex {
@@ -26,4 +29,9 @@ body {
 
 .flex-column {
   flex-direction: column;
+}
+
+.container {
+  width: 90%;
+  max-width: 1024px;
 }

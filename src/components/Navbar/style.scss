@@ -1,1 +1,74 @@
 @import "../../styles/variable.scss";
+
+.navbar {
+  width: 100%;
+  position: absolute;
+  justify-content: center;
+  z-index: 99;
+
+  &-wrapper {
+    padding-top: 48px;
+    justify-content: space-between;
+
+    @media (max-width: 1024px) {
+      padding-top: 24px;
+    }
+  }
+
+  &-logo {
+    align-items: center;
+
+    & > img {
+      width: 64px;
+
+      @media (max-width: 1024px) {
+        width: 48px;
+      }
+    }
+
+    & > span {
+      padding-left: 16px;
+      font-size: 24px;
+      font-weight: bold;
+      color: $black;
+
+      @media (max-width: 1024px) {
+        font-size: 18px;
+      }
+    }
+  }
+
+  &-socials {
+    align-items: center;
+
+    & > a {
+      cursor: pointer;
+
+      &:nth-child(1) {
+        color: $blue-telegram;
+      }
+
+      &:nth-child(2) {
+        color: $blue-twitter;
+      }
+
+      &:not(:last-of-type) {
+        margin-right: 24px;
+
+        @media (max-width: 1024px) {
+          margin-right: 16px;
+        }
+      }
+
+      & > svg {
+        width: 36px;
+        height: 36px;
+
+        @media (max-width: 1024px) {
+          width: 28px;
+          height: 28px;
+        }
+      }
+    }
+  }
+}
