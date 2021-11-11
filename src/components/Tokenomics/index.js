@@ -1,3 +1,4 @@
+import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa"
 import {
   Stability,
   Marketing,
@@ -16,6 +17,14 @@ const Tokenomics = () => (
     <div className="tokenomics-title container flex flex-column">
       Tokenomics
       <Meteor />
+    </div>
+    <div className="tokenomics-subtitle container flex">
+      <FaQuoteLeft />
+      <span>
+        We have the following fees per swap that will help develop the Catemoon
+        ecosystem.
+      </span>
+      <FaQuoteRight />
     </div>
     <div className="tokenomics-wrapper container flex">
       <div className="tokenomics-item flex flex-column">

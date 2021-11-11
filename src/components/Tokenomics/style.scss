@@ -37,6 +37,32 @@
     }
   }
 
+  &-subtitle {
+    margin-top: 16px;
+    text-align: center;
+
+    & > svg {
+      color: $gray;
+      font-size: 48px;
+      margin: 0 32px;
+
+      @media (max-width: 768px) {
+        min-width: 24px;
+        margin: 0 16px;
+      }
+    }
+
+    & > span {
+      color: $white;
+      font-size: 16px;
+      font-weight: 600;
+
+      @media (max-width: 768px) {
+        font-size: 14px;
+      }
+    }
+  }
+
   &-wrapper {
     flex-wrap: wrap;
     padding-top: 24px;
