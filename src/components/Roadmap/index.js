@@ -33,7 +33,6 @@ const Roadmap = () => (
             <span>Phase 2</span>
             <p>Staking for Catemoon Holders</p>
             <p>Community Grants</p>
-            <p>CEX Listings</p>
           </div>
         </div>
       </div>
@@ -43,7 +42,6 @@ const Roadmap = () => (
             <span>Phase 3</span>
             <p>CEX Listings</p>
             <p>Bridge to Solana and potentially other Blockchains</p>
-            <p>Increase LP and lock</p>
           </div>
         </div>
       </div>
