@@ -4,11 +4,18 @@ import {
   CateBall,
   CateRocket,
   PlanetBig,
+  Rocket,
+  PlanetPurple,
+  Meteor,
+  PlanetOrangeSmall,
+  NeonBackground,
 } from "resources"
 import "./style.scss"
 
 const Info = () => (
   <div className="info flex flex-column">
+    <Rocket className="info-rocket" />
+    <PlanetPurple className="purple" />
     <div className="info-wrapper container flex flex-column">
       <div className="info-item">
         <CateMoon />
@@ -38,10 +45,14 @@ const Info = () => (
           <p>We're unique, though, as we're not a doge coin.</p>
           <p>We are Catemoon.</p>
         </div>
-        <CateBalloon />
+        <div className="info-item-svg flex">
+          <CateBalloon />
+        </div>
       </div>
       <div className="info-item">
         <CateBall />
+        <PlanetOrangeSmall className="flex top" />
+        <NeonBackground className="neon" />
         <div className="flex flex-column">
           <h2>Next Level Marketing</h2>
           <p>
@@ -61,6 +72,9 @@ const Info = () => (
             to their followers.
           </p>
         </div>
+        <Meteor className="left-one" />
+        <Meteor className="left-two" />
+        <Meteor className="right" />
       </div>
     </div>
     <div className="info-last flex">
@@ -84,7 +98,7 @@ const Info = () => (
         </div>
       </div>
     </div>
-    <PlanetBig />
+    <PlanetBig className="last" />
   </div>
 )
 

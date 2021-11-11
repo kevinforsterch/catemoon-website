@@ -16,9 +16,9 @@ import { ReactComponent as PlanetPurple } from "./Planets/Planet_Purple.svg"
 import { ReactComponent as PlanetPink } from "./Planets/Planet.svg"
 import { ReactComponent as Rocket } from "./Planets/Rocket.svg"
 import { ReactComponent as PlanetBig } from "./Planets/Planet_Big.svg"
-import { ReactComponent as PlanetOrangeBig } from "./Planets/Planet_Orange_2.svg"
 import { ReactComponent as PlanetOrangeSmall } from "./Planets/Planet_Orange_Small.svg"
 import { ReactComponent as PlanetBlue } from "./Planets/Planet_Blue.svg"
+import { ReactComponent as NeonBackground } from "./hero-background-neon.svg"
 
 export {
   Logo,
@@ -36,10 +36,10 @@ export {
   LoadingIcon,
   Meteor,
   PlanetOrangeSmall,
-  PlanetOrangeBig,
   PlanetPurple,
   PlanetBig,
   PlanetBlue,
   PlanetPink,
   Rocket,
+  NeonBackground,
 }
