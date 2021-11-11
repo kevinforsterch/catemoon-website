@@ -12,7 +12,7 @@ const Navbar = () => (
       <div className="navbar-socials flex">
         <a
           className="flex"
-          href="https://twitter.com/CateMoon"
+          href="https://t.me/CateMoonCoin"
           target="_blank"
           rel="noreferrer"
         >
@@ -20,20 +20,20 @@ const Navbar = () => (
         </a>
         <a
           className="flex"
-          href="https://t.me/CateMoonCoin"
+          href="https://twitter.com/CateMoon"
           target="_blank"
           rel="noreferrer"
         >
           <FaTwitter />
         </a>
-        <a
+        {/* <a
           className="flex"
           href="https://poocoin.app/tokens/0x1Ffeb0B5df9B876d1C3689eEDbea392F1652cF8A"
           target="_blank"
           rel="noreferrer"
         >
           <PooCoin />
-        </a>
+        </a> */}
       </div>
     </div>
   </div>

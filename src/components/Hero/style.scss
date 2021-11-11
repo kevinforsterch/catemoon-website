@@ -6,14 +6,11 @@
   padding: 256px 0 32px;
   background-image: url("../../resources/header.png");
   background-position: top center;
-  background-size: 100% 160px;
+  background-size: 100% 100px;
   background-repeat: no-repeat;
 
-  @media (max-width: 1024px) {
-    background-size: contain;
-  }
-
   @media (max-width: 768px) {
+    background-size: contain;
     padding: 160px 0 32px;
   }
 
@@ -138,7 +135,7 @@
       & > span {
         margin-top: 16px;
         color: $white;
-        font-size: 18px;
+        font-size: 20px;
         text-align: center;
         font-family: "Nunito", sans-serif !important;
       }
