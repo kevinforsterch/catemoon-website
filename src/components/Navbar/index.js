@@ -12,19 +12,19 @@ const Navbar = () => (
       <div className="navbar-socials flex">
         <a
           className="flex"
-          href="https://t.me/CateMoonCoin"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <FaTelegram />
-        </a>
-        <a
-          className="flex"
           href="https://twitter.com/CateMoon"
           target="_blank"
           rel="noreferrer"
         >
           <FaTwitter />
+        </a>
+        <a
+          className="flex"
+          href="https://t.me/CateMoonCoin"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <FaTelegram />
         </a>
         {/* <a
           className="flex"
