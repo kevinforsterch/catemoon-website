@@ -26,7 +26,7 @@ const Hero = ({ holders = 1, price = 0, marketcap = 0 }) => (
         <span>Price</span>
       </div>
       <div className="hero-ticker-item flex flex-column">
-        <div>100,000,000</div>
+        <div>100,000,000,000</div>
         <span>Supply</span>
       </div>
       <div className="hero-ticker-item flex flex-column">
