@@ -71,9 +71,15 @@
       bottom: -12px;
     }
 
-    & > svg {
-      width: 120px;
-      height: 120px;
+    & > div {
+      width: 144px;
+      height: 144px;
+      border: 12px solid rgba($color: $orange, $alpha: 0.15);
+      border-radius: 50%;
+
+      & > img {
+        width: 100%;
+      }
     }
 
     & > span {

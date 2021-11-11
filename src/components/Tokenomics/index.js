@@ -19,7 +19,9 @@ const Tokenomics = () => (
     </div>
     <div className="tokenomics-wrapper container flex">
       <div className="tokenomics-item flex flex-column">
-        <Stability />
+        <div>
+          <img src={Stability} alt="stability" />
+        </div>
         <span>Stability</span>
         <p>
           2% will be used for auto-LP. This allows for larger trading volumes
@@ -28,7 +30,9 @@ const Tokenomics = () => (
         </p>
       </div>
       <div className="tokenomics-item flex flex-column">
-        <Marketing />
+        <div>
+          <img src={Marketing} alt="stability" />
+        </div>
         <span>Marketing and development</span>
         <p>
           1% will go to the team's Multi-sig Wallet. Funds on this wallet will
@@ -38,7 +42,9 @@ const Tokenomics = () => (
         </p>
       </div>
       <div className="tokenomics-item flex flex-column">
-        <Distribution />
+        <div>
+          <img src={Distribution} alt="stability" />
+        </div>
         <span>Distribution</span>
         <p>
           1% will be auto-distributed to all holders. This incentivizes
@@ -47,7 +53,9 @@ const Tokenomics = () => (
         </p>
       </div>
       <div className="tokenomics-item flex flex-column">
-        <Deflation />
+        <div>
+          <img src={Deflation} alt="stability" />
+        </div>
         <span>Deflation</span>
         <p>
           1% will be burned automatically. This decreases the supply of the
@@ -55,7 +63,9 @@ const Tokenomics = () => (
         </p>
       </div>
       <div className="tokenomics-item flex flex-column">
-        <Organic />
+        <div>
+          <img src={Organic} alt="stability" />
+        </div>
         <span>Organic growth</span>
         <p>
           1% will be automatically used for BuyBack. This adds more value to the
