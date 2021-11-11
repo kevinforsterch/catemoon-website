@@ -1,0 +1,145 @@
+@import "../../styles/variable.scss";
+
+.roadmap {
+  width: 100%;
+  align-items: center;
+  padding: 64px 0 0;
+
+  &-title {
+    position: relative;
+    color: $white;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    align-items: center;
+
+    &::before {
+      position: absolute;
+      content: "RoadMap";
+      color: rgba($color: $white, $alpha: 0.1);
+      font-size: 36px;
+      font-weight: 600;
+      bottom: 4px;
+    }
+  }
+
+  &-wrapper {
+    display: grid;
+    grid-template: auto / 1fr 1fr 1fr;
+    grid-column-gap: 36px;
+    grid-row-gap: 24px;
+    margin-top: 36px;
+
+    @media (max-width: 768px) {
+      grid-template: auto / 1fr 1fr;
+    }
+
+    @media (max-width: 425px) {
+      grid-template: auto / 1fr;
+    }
+  }
+
+  &-item {
+    position: relative;
+
+    &:before {
+      top: 0;
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: calc(50% - 8px);
+      overflow: hidden;
+      border-radius: 24px 24px 0 0;
+    }
+
+    &:after {
+      bottom: 0;
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: calc(50% - 12px);
+      overflow: hidden;
+      border-radius: 0 0 24px 24px;
+    }
+
+    & > div {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      background-color: $purple;
+      padding: 24px;
+      margin: 4px;
+      border-radius: 24px;
+      z-index: 2;
+
+      & > div {
+        align-items: center;
+        justify-content: center;
+        border-radius: 16px;
+        padding: 36px 24px;
+
+        & > span {
+          font-size: 24px;
+          font-weight: 600;
+          color: $white;
+          text-align: center;
+        }
+
+        & > p {
+          color: $white;
+          font-size: 14px;
+          text-align: center;
+        }
+      }
+    }
+
+    &:nth-child(1) {
+      &:before {
+        border: 4px solid $orange;
+      }
+
+      &:after {
+        border: 4px dashed $orange;
+      }
+
+      & > div > div {
+        box-shadow: inset 0 0 8px rgba($color: $orange, $alpha: 0.8);
+        background-image: linear-gradient(-20deg, $red 0%, $orange);
+      }
+    }
+
+    &:nth-child(2) {
+      &:before {
+        border: 4px dashed $purple-end;
+      }
+
+      &:after {
+        border: 4px solid $purple-end;
+      }
+
+      & > div > div {
+        box-shadow: inset 0 0 8px rgba($color: $purple-end, $alpha: 0.8);
+        background-image: linear-gradient(
+          -20deg,
+          $purple-start 0%,
+          $purple-end
+        );
+      }
+    }
+
+    &:nth-child(3) {
+      &:before {
+        border: 4px solid $cyan-end;
+      }
+
+      &:after {
+        border: 4px dashed $cyan-end;
+      }
+
+      & > div > div {
+        box-shadow: inset 0 0 8px rgba($color: $cyan-end, $alpha: 0.8);
+        background-image: linear-gradient(-20deg, $cyan-start 0%, $cyan-end);
+      }
+    }
+  }
+}

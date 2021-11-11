@@ -4,6 +4,14 @@
   width: 100%;
   align-items: center;
   padding: 256px 0 32px;
+  background-image: url("../../resources/header.png");
+  background-position: top center;
+  background-size: 100% 160px;
+  background-repeat: no-repeat;
+
+  @media (max-width: 1024px) {
+    background-size: contain;
+  }
 
   @media (max-width: 768px) {
     padding: 160px 0 32px;
