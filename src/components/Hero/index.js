@@ -9,7 +9,7 @@ const Hero = ({ holders = 1, price = 0, marketcap = 0 }) => (
           CATEMOON STARTS A NEW GENERATION OF <span>DEFI MEME</span> COINS
         </h1>
         <a className="flex" href="" target="_blank" rel="noreferrer">
-          Get Started
+          Pancakeswap
         </a>
       </div>
       <div className="hero-image flex">

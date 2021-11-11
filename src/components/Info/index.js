@@ -68,8 +68,7 @@ const Info = () => (
             adoption of the coin. So, we're going to invest all the profit that
             CateMoon makes into ads. We'll have ads running on Reddit, YouTube,
             your grandma's favorite cooking channel, and everywhere else we can
-            find. We'll also get TikTok influencers on board to spread the word
-            to their followers.
+            find.
           </p>
         </div>
         <Meteor className="left-one" />
