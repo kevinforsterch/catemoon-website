@@ -4,6 +4,10 @@ import {
   Distribution,
   Deflation,
   Organic,
+  PlanetOrangeSmall,
+  PlanetPink,
+  Rocket,
+  Meteor,
 } from "resources/index"
 import "./style.scss"
 
@@ -11,6 +15,7 @@ const Tokenomics = () => (
   <div className="tokenomics flex flex-column">
     <div className="tokenomics-title container flex flex-column">
       Tokenomics
+      <Meteor />
     </div>
     <div className="tokenomics-wrapper container flex">
       <div className="tokenomics-item flex flex-column">
@@ -53,12 +58,15 @@ const Tokenomics = () => (
         <Organic />
         <span>Organic growth</span>
         <p>
-          1% will be automatically used for BuyBack. This not only adds more
-          value to the liquidity pool but also decrease the supply making it
-          easier to avoid large dumps.
+          1% will be automatically used for BuyBack. This adds more value to the
+          liquidity pool and decreases the supply, making it easier to avoid
+          large dumps.
         </p>
       </div>
     </div>
+    <PlanetOrangeSmall className="small" />
+    <PlanetPink className="pink" />
+    <Rocket className="rocket" />
   </div>
 )
 

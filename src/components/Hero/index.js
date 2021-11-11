@@ -1,4 +1,4 @@
-import { CateHero } from "resources/index"
+import { CateHero, PlanetBlue } from "resources/index"
 import "./style.scss"
 
 const Hero = ({ holders = 1, price = 0, marketcap = 0 }) => (
@@ -34,6 +34,7 @@ const Hero = ({ holders = 1, price = 0, marketcap = 0 }) => (
         <span>Marketcap</span>
       </div>
     </div>
+    <PlanetBlue />
   </div>
 )
 

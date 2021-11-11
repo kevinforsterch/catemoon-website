@@ -1,14 +1,13 @@
 @import "../../styles/variable.scss";
 
 .info {
+  position: relative;
   width: 100%;
-  justify-content: center;
-  padding: 64px 0;
-
-  &-wrapper {
-  }
+  align-items: center;
+  padding: 0 0 128px;
 
   &-item {
+    padding: 32px 0;
     width: 100%;
     margin-bottom: 64px;
     grid-column-gap: 32px;
@@ -22,8 +21,12 @@
       display: grid;
       grid-template: auto / 1fr 2fr;
       align-items: center;
+      background-image: url("../../resources/weavy-background.png");
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
 
       @media (max-width: 768px) {
+        background-image: none;
         grid-template: auto / 1fr;
         justify-items: center;
       }
@@ -33,8 +36,9 @@
         height: auto;
 
         @media (max-width: 768px) {
+          width: 60%;
+          max-width: 320px;
           grid-template: auto / 1fr;
-          max-width: 360px;
         }
       }
 
@@ -96,6 +100,7 @@
         height: auto;
 
         @media (max-width: 768px) {
+          width: 60%;
           max-width: 320px;
           grid-row: 1;
         }
@@ -106,8 +111,12 @@
       display: grid;
       grid-template: auto / 1fr 2fr;
       align-items: center;
+      background-image: url("../../resources/weavy-background.png");
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
 
       @media (max-width: 768px) {
+        background-image: none;
         grid-template: auto / 1fr;
         justify-items: center;
       }
@@ -118,7 +127,8 @@
 
         @media (max-width: 768px) {
           grid-template: auto / 1fr;
-          max-width: 360px;
+          width: 60%;
+          max-width: 320px;
         }
       }
 
@@ -136,40 +146,90 @@
         }
       }
     }
+  }
 
-    &:nth-child(4) {
-      display: grid;
-      grid-template: auto / 1fr 1fr;
-      align-items: center;
-      justify-items: center;
+  &-last {
+    width: 100%;
+    padding: 128px 0;
+    justify-content: center;
+    background-image: url("../../resources/dots.svg"),
+      url("../../resources/background.png");
+    background-size: cover, 100% 100%;
+
+    @media (max-width: 1024px) {
+      padding: 156px 0;
+      background-size: cover;
+      background-position: center;
+    }
+
+    &-section {
+      margin-bottom: 64px;
+      grid-column-gap: 32px;
+      grid-row-gap: 24px;
 
       @media (max-width: 768px) {
-        grid-template: auto / 1fr;
-        justify-items: center;
-      }
-
-      & > svg {
-        width: 80%;
-        height: auto;
-
-        @media (max-width: 768px) {
-          grid-template: auto / 1fr;
-          max-width: 360px;
-        }
+        margin-bottom: 32px;
       }
 
       & > div {
-        & > p {
-          color: $white;
-          font-size: 16px;
-          line-height: 32px;
-          font-weight: 600;
+        display: grid;
+        grid-template: auto / 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+
+        @media (max-width: 768px) {
+          grid-template: auto / 1fr;
+          justify-items: center;
+        }
+
+        & > svg {
+          width: 80%;
+          height: auto;
 
           @media (max-width: 768px) {
-            text-align: center;
+            grid-template: auto / 1fr;
+            width: 60%;
+            max-width: 320px;
+            grid-row: 1;
+          }
+        }
+
+        & > div {
+          & > p {
+            color: $white;
+            font-size: 16px;
+            line-height: 32px;
+            font-weight: 600;
+
+            @media (max-width: 768px) {
+              text-align: center;
+            }
           }
         }
       }
+    }
+  }
+
+  & > svg {
+    position: absolute;
+    bottom: 0;
+    width: 560px;
+    left: -280px;
+    height: auto;
+
+    @media (max-width: 1440px) {
+      width: 480px;
+      left: -240px;
+    }
+
+    @media (max-width: 1024px) {
+      width: 400px;
+      left: -200px;
+    }
+
+    @media (max-width: 1024px) {
+      width: 320px;
+      left: -160px;
     }
   }
 }

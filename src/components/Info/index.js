@@ -1,8 +1,14 @@
-import { CateMoon, CateBalloon, CateBall, CateRocket } from "resources"
+import {
+  CateMoon,
+  CateBalloon,
+  CateBall,
+  CateRocket,
+  PlanetBig,
+} from "resources"
 import "./style.scss"
 
 const Info = () => (
-  <div className="info flex">
+  <div className="info flex flex-column">
     <div className="info-wrapper container flex flex-column">
       <div className="info-item">
         <CateMoon />
@@ -47,31 +53,38 @@ const Info = () => (
             exist, with some pretty images.
           </p>
           <p>
-            We want everyone to hear about CateMoon, as your main focus is on
-            the adoption of the coin. So, we're going to invest all the profit
-            that CateMoon makes into ads. We'll have ads running on Reddit,
-            YouTube, your grandma's favorite cooking channel, and everywhere
-            else we can find. We'll also get TikTok influencers on board to
-            spread the word to their followers.
+            We want everyone to hear about CateMoon, as our main focus is on the
+            adoption of the coin. So, we're going to invest all the profit that
+            CateMoon makes into ads. We'll have ads running on Reddit, YouTube,
+            your grandma's favorite cooking channel, and everywhere else we can
+            find. We'll also get TikTok influencers on board to spread the word
+            to their followers.
           </p>
         </div>
-      </div>
-      <div className="info-item">
-        <div className="flex flex-column">
-          <p>
-            The best part is we will be giving rewards to everyone who helps us
-            promote CateMoon to their communities. All CateMoon users can be
-            part of the effort, with benefits for everyone who gets involved.
-          </p>
-          <p>
-            What does this mean? It means you will get rewards when you follow,
-            like, and retweet the content that we post on social media. And the
-            earlier you get involved, the more profitable it will be.
-          </p>
-        </div>
-        <CateRocket />
       </div>
     </div>
+    <div className="info-last flex">
+      <div className="info-last-section container">
+        <div>
+          <div className="flex flex-column">
+            <p>
+              The best part is we will be giving rewards to everyone who helps
+              us promote CateMoon to their communities. All CateMoon users can
+              be part of the effort, with benefits for everyone who gets
+              involved.
+            </p>
+            <p>
+              What does this mean? It means you will get rewards when you
+              follow, like, and retweet the content that we post on social
+              media. And the earlier you get involved, the more profitable it
+              will be.
+            </p>
+          </div>
+          <CateRocket />
+        </div>
+      </div>
+    </div>
+    <PlanetBig />
   </div>
 )
 

@@ -12,8 +12,13 @@ import { ReactComponent as Distribution } from "./Roadmap/distribution.svg"
 import { ReactComponent as Deflation } from "./Roadmap/deflation.svg"
 import { ReactComponent as Organic } from "./Roadmap/organic.svg"
 import { ReactComponent as Meteor } from "./Planets/Meteorite.svg"
-import { ReactComponent as PlanetOrangeSmall } from "./Planets/Planet_Orange_Small.svg"
 import { ReactComponent as PlanetPurple } from "./Planets/Planet_Purple.svg"
+import { ReactComponent as PlanetPink } from "./Planets/Planet.svg"
+import { ReactComponent as Rocket } from "./Planets/Rocket.svg"
+import { ReactComponent as PlanetBig } from "./Planets/Planet_Big.svg"
+import { ReactComponent as PlanetOrangeBig } from "./Planets/Planet_Orange_2.svg"
+import { ReactComponent as PlanetOrangeSmall } from "./Planets/Planet_Orange_Small.svg"
+import { ReactComponent as PlanetBlue } from "./Planets/Planet_Blue.svg"
 
 export {
   Logo,
@@ -31,5 +36,10 @@ export {
   LoadingIcon,
   Meteor,
   PlanetOrangeSmall,
+  PlanetOrangeBig,
   PlanetPurple,
+  PlanetBig,
+  PlanetBlue,
+  PlanetPink,
+  Rocket,
 }

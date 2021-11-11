@@ -17,10 +17,15 @@
 
   & > p {
     color: $gold;
+    text-shadow: 0 0 2px rgba($color: $gold, $alpha: 0.7);
     margin-top: 24px;
-    font-size: 24px;
+    font-size: 32px;
     font-weight: bold;
     z-index: 1;
+
+    @media (max-width: 768px) {
+      font-size: 24px;
+    }
   }
 
   &-meteor {

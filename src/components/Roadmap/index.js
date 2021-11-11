@@ -1,72 +1,59 @@
+import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa"
 import "./style.scss"
 
 const Roadmap = () => (
   <div className="roadmap flex flex-column">
-    <div className="roadmap-title continer flex flex-column">RoadMap</div>
+    <div className="roadmap-title container flex flex-column">
+      <span>Roadmap</span>
+    </div>
+    <div className="roadmap-subtitle container flex">
+      <FaQuoteLeft />
+      <span>
+        Here we enlisted the events that we've already made plans for, however,
+        there are many more ideas and partnerships that we hope will become
+        reality later on in our journey, once they are confirmed we will update
+        the roadmap.
+      </span>
+      <FaQuoteRight />
+    </div>
     <div className="roadmap-wrapper container">
       <div className="roadmap-item flex flex-column">
-        <div>
+        <div className="flex">
           <div className="flex flex-column">
             <span>Phase 1</span>
-            <p>
-              1% will be burned automatically. This decreases the supply of the
-              token in circulation, contributing to a steady price increase.
-            </p>
+            <p>Catemoon Launch</p>
+            <p>LP + Supply Lock</p>
+            <p>Twitter Automated Rewards for the community</p>
           </div>
         </div>
       </div>
       <div className="roadmap-item flex flex-column">
-        <div>
+        <div className="flex">
           <div className="flex flex-column">
             <span>Phase 2</span>
-            <p>
-              1% will be burned automatically. This decreases the supply of the
-              token in circulation, contributing to a steady price increase.
-            </p>
+            <p>Staking for Catemoon Holders</p>
+            <p>Community Grants</p>
+            <p>CEX Listings</p>
           </div>
         </div>
       </div>
       <div className="roadmap-item flex flex-column">
-        <div>
+        <div className="flex">
           <div className="flex flex-column">
             <span>Phase 3</span>
-            <p>
-              1% will be burned automatically. This decreases the supply of the
-              token in circulation, contributing to a steady price increase.
-            </p>
+            <p>CEX Listings</p>
+            <p>Bridge to Solana and potentially other Blockchains</p>
+            <p>Increase LP and lock</p>
           </div>
         </div>
       </div>
       <div className="roadmap-item flex flex-column">
-        <div>
+        <div className="flex">
           <div className="flex flex-column">
             <span>Phase 4</span>
-            <p>
-              1% will be burned automatically. This decreases the supply of the
-              token in circulation, contributing to a steady price increase.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div className="roadmap-item flex flex-column">
-        <div>
-          <div className="flex flex-column">
-            <span>Phase 5</span>
-            <p>
-              1% will be burned automatically. This decreases the supply of the
-              token in circulation, contributing to a steady price increase.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div className="roadmap-item flex flex-column">
-        <div>
-          <div className="flex flex-column">
-            <span>Phase 6</span>
-            <p>
-              1% will be burned automatically. This decreases the supply of the
-              token in circulation, contributing to a steady price increase.
-            </p>
+            <p>Formation of CateDAO</p>
+            <p>Cate NFT's - Airdrop to OG holders</p>
+            <p>Increase LP and lock</p>
           </div>
         </div>
       </div>
