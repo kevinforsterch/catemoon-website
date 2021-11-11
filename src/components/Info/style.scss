@@ -349,7 +349,13 @@
   top: -640px;
 
   @media (max-width: 768px) {
-    left: -110px;
+    left: -120px;
     top: -580px;
+  }
+
+  @media (max-width: 425px) {
+    left: -70px;
+    top: -460px;
+    width: 520px;
   }
 }
