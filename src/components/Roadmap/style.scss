@@ -141,5 +141,50 @@
         background-image: linear-gradient(-20deg, $cyan-start 0%, $cyan-end);
       }
     }
+
+    &:nth-child(4) {
+      &:before {
+        border: 4px dashed $green-end;
+      }
+
+      &:after {
+        border: 4px solid $green-end;
+      }
+
+      & > div > div {
+        box-shadow: inset 0 0 8px rgba($color: $green-end, $alpha: 0.8);
+        background-image: linear-gradient(-20deg, $green-start 0%, $green-end);
+      }
+    }
+
+    &:nth-child(5) {
+      &:before {
+        border: 4px solid $blue-end;
+      }
+
+      &:after {
+        border: 4px dashed $blue-end;
+      }
+
+      & > div > div {
+        box-shadow: inset 0 0 8px rgba($color: $blue-end, $alpha: 0.8);
+        background-image: linear-gradient(-20deg, $blue-start 0%, $blue-end);
+      }
+    }
+
+    &:nth-child(6) {
+      &:before {
+        border: 4px dashed $pink-end;
+      }
+
+      &:after {
+        border: 4px solid $pink-end;
+      }
+
+      & > div > div {
+        box-shadow: inset 0 0 8px rgba($color: $pink-end, $alpha: 0.8);
+        background-image: linear-gradient(-20deg, $pink-start 0%, $pink-end);
+      }
+    }
   }
 }

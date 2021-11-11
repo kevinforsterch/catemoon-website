@@ -37,6 +37,39 @@ const Roadmap = () => (
           </div>
         </div>
       </div>
+      <div className="roadmap-item flex flex-column">
+        <div>
+          <div className="flex flex-column">
+            <span>Phase 4</span>
+            <p>
+              1% will be burned automatically. This decreases the supply of the
+              token in circulation, contributing to a steady price increase.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="roadmap-item flex flex-column">
+        <div>
+          <div className="flex flex-column">
+            <span>Phase 5</span>
+            <p>
+              1% will be burned automatically. This decreases the supply of the
+              token in circulation, contributing to a steady price increase.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="roadmap-item flex flex-column">
+        <div>
+          <div className="flex flex-column">
+            <span>Phase 6</span>
+            <p>
+              1% will be burned automatically. This decreases the supply of the
+              token in circulation, contributing to a steady price increase.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 )
