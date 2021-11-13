@@ -1,4 +1,4 @@
-import { FaTelegram, FaTwitter } from "react-icons/fa"
+import { FaTelegram, FaTwitter, FaGithub } from "react-icons/fa"
 import { Logo, PooCoin } from "resources/index"
 import "./style.scss"
 
@@ -26,14 +26,22 @@ const Navbar = () => (
         >
           <FaTelegram />
         </a>
-        {/* <a
+        <a
           className="flex"
           href="https://poocoin.app/tokens/0x1Ffeb0B5df9B876d1C3689eEDbea392F1652cF8A"
           target="_blank"
           rel="noreferrer"
         >
           <PooCoin />
-        </a> */}
+        </a>
+        <a
+          className="flex"
+          href="https://github.com/CoryITpro/catemoon-token-bep20"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <FaGithub />
+        </a>
       </div>
     </div>
   </div>

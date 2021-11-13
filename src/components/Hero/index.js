@@ -8,7 +8,12 @@ const Hero = ({ holders = 1, price = 0, marketcap = 0 }) => (
         <h1>
           CATEMOON STARTS A NEW GENERATION OF <span>DEFI MEME</span> COINS
         </h1>
-        <a className="flex" href="" target="_blank" rel="noreferrer">
+        <a
+          className="flex"
+          href="https://pancakeswap.finance/swap?inputCurrency=0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c&outputCurrency=0x1ffeb0b5df9b876d1c3689eedbea392f1652cf8a"
+          target="_blank"
+          rel="noreferrer"
+        >
           Pancakeswap
         </a>
       </div>

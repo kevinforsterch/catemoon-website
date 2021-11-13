@@ -54,6 +54,10 @@
         color: $blue-twitter;
       }
 
+      &:nth-child(4) {
+        color: $black-github;
+      }
+
       &:not(:last-of-type) {
         margin-right: 16px;
 
