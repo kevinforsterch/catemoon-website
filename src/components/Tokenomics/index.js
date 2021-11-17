@@ -46,7 +46,7 @@ const Tokenomics = () => (
         <p>
           1% will go to the team's Multi-sig Wallet. Funds on this wallet will
           be used for Marketing, Airdrops, Charity, Community grants, and
-          growing the Catemoon ecysystem. Actions taken will be shared with the
+          growing the Catemoon ecosystem. Actions taken will be shared with the
           community.
         </p>
       </div>
