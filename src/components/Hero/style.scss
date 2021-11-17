@@ -119,8 +119,8 @@
     }
 
     &-item {
-      position: relative;
       width: 100%;
+      position: relative;
       align-items: center;
 
       & > div {
@@ -133,6 +133,7 @@
         text-align: center;
         background-color: $white;
         font-family: "Nunito", sans-serif !important;
+        text-overflow: ellipsis;
       }
 
       & > span {
@@ -141,6 +142,10 @@
         font-size: 20px;
         text-align: center;
         font-family: "Nunito", sans-serif !important;
+
+        & > span {
+          font-size: 12px;
+        }
       }
     }
   }

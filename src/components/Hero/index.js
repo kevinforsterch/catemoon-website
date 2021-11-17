@@ -1,7 +1,8 @@
 import { CateHero, PlanetBlue } from "resources/index"
+import { catemoonAddress, wBNBAddress } from "constants/index"
 import "./style.scss"
 
-const Hero = ({ holders = 1, price = 0, marketcap = 0 }) => (
+const Hero = ({ holders, price, marketcap = 0 }) => (
   <div className="hero flex flex-column">
     <div className="hero-wrapper container">
       <div className="hero-title flex flex-column">
@@ -10,7 +11,7 @@ const Hero = ({ holders = 1, price = 0, marketcap = 0 }) => (
         </h1>
         <a
           className="flex"
-          href="https://pancakeswap.finance/swap?inputCurrency=0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c&outputCurrency=0x1ffeb0b5df9b876d1c3689eedbea392f1652cf8a"
+          href={`https://pancakeswap.finance/swap?inputCurrency=${wBNBAddress}&outputCurrency=${catemoonAddress}`}
           target="_blank"
           rel="noreferrer"
         >
@@ -28,7 +29,9 @@ const Hero = ({ holders = 1, price = 0, marketcap = 0 }) => (
       </div>
       <div className="hero-ticker-item flex flex-column">
         <div>{price}</div>
-        <span>Price</span>
+        <span>
+          Price <span>(USD)</span>
+        </span>
       </div>
       <div className="hero-ticker-item flex flex-column">
         <div>100,000,000,000</div>
@@ -36,7 +39,9 @@ const Hero = ({ holders = 1, price = 0, marketcap = 0 }) => (
       </div>
       <div className="hero-ticker-item flex flex-column">
         <div>{marketcap}</div>
-        <span>Marketcap</span>
+        <span>
+          FDMC <span>(USD)</span>
+        </span>
       </div>
     </div>
     <PlanetBlue />
