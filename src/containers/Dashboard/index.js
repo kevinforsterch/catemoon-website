@@ -34,7 +34,7 @@ const Dashboard = () => {
     })
       .then(({ data }) => {
         setPrice(data.data.price.slice(0, 13))
-        setMarketcap((data.data.price * 100000000000).toFixed(2))
+        setMarketcap((data.data.price * 100000000000).toFixed(0))
       })
       .catch((err) => {
         console.log(err.message)

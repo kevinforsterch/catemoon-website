@@ -2,6 +2,10 @@ import { CateHero, PlanetBlue } from "resources/index"
 import { catemoonAddress, wBNBAddress } from "constants/index"
 import "./style.scss"
 
+const makeUnified = (number) => {
+  return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+}
+
 const Hero = ({ holders, price, marketcap = 0 }) => (
   <div className="hero flex flex-column">
     <div className="hero-wrapper container">
@@ -34,13 +38,13 @@ const Hero = ({ holders, price, marketcap = 0 }) => (
         </span>
       </div>
       <div className="hero-ticker-item flex flex-column">
-        <div>100,000,000,000</div>
+        <div>{makeUnified(100000000000)}</div>
         <span>Supply</span>
       </div>
       <div className="hero-ticker-item flex flex-column">
-        <div>{marketcap}</div>
+        <div>{makeUnified(marketcap)}</div>
         <span>
-          FDMC <span>(USD)</span>
+          FDV <span>(USD)</span>
         </span>
       </div>
     </div>
