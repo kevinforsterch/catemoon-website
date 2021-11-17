@@ -15,6 +15,7 @@ const Navbar = () => (
           href="https://twitter.com/CateMoon"
           target="_blank"
           rel="noreferrer"
+          aria-label="twitter"
         >
           <FaTwitter />
         </a>
@@ -23,6 +24,7 @@ const Navbar = () => (
           href="https://t.me/CateMoonCoin"
           target="_blank"
           rel="noreferrer"
+          aria-label="telegram"
         >
           <FaTelegram />
         </a>
@@ -31,6 +33,7 @@ const Navbar = () => (
           href="https://poocoin.app/tokens/0x1Ffeb0B5df9B876d1C3689eEDbea392F1652cF8A"
           target="_blank"
           rel="noreferrer"
+          aria-label="poocoin"
         >
           <PooCoin />
         </a>
@@ -39,6 +42,7 @@ const Navbar = () => (
           href="https://github.com/CoryITpro/catemoon-token-bep20"
           target="_blank"
           rel="noreferrer"
+          aria-label="github"
         >
           <FaGithub />
         </a>

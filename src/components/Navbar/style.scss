@@ -21,9 +21,11 @@
 
     & > img {
       width: 48px;
+      height: 38.25px;
 
       @media (max-width: 1024px) {
         width: 36px;
+        height: 28.69px;
       }
     }
 
