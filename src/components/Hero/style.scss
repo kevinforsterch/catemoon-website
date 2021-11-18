@@ -50,31 +50,33 @@
       }
     }
 
-    & > a {
-      width: 180px;
-      justify-content: center;
-      font-family: "Nunito", sans-serif !important;
-      font-size: 18px;
-      color: $white;
-      text-decoration: none;
-      padding: 12px 0;
-      border-radius: 64px;
-      background-image: linear-gradient(-20deg, $red 0%, $orange);
-      box-shadow: inset 0 0 8px rgba($color: $orange, $alpha: 0.8),
-        2px 8px 16px 4px rgba($color: $orange, $alpha: 0.15);
-
-      &:hover {
-        box-shadow: inset 0 0 16px rgba($color: $orange, $alpha: 0.8),
-          2px 16px 16px 4px rgba($color: $orange, $alpha: 0.15);
-      }
-
-      &:active {
+    & > div {
+      & > a {
+        width: 180px;
+        justify-content: center;
+        font-family: "Nunito", sans-serif !important;
+        font-size: 18px;
+        color: $white;
+        text-decoration: none;
+        padding: 12px 0;
+        border-radius: 64px;
+        background-image: linear-gradient(-20deg, $red 0%, $orange);
         box-shadow: inset 0 0 8px rgba($color: $orange, $alpha: 0.8),
           2px 8px 16px 4px rgba($color: $orange, $alpha: 0.15);
-      }
 
-      @media (max-width: 768px) {
-        align-self: center;
+        &:hover {
+          box-shadow: inset 0 0 16px rgba($color: $orange, $alpha: 0.8),
+            2px 16px 16px 4px rgba($color: $orange, $alpha: 0.15);
+        }
+
+        &:active {
+          box-shadow: inset 0 0 8px rgba($color: $orange, $alpha: 0.8),
+            2px 8px 16px 4px rgba($color: $orange, $alpha: 0.15);
+        }
+
+        @media (max-width: 768px) {
+          align-self: center;
+        }
       }
     }
   }
