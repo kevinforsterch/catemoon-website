@@ -1,5 +1,5 @@
 import { FaTelegram, FaTwitter, FaGithub } from "react-icons/fa"
-import { Logo, PooCoin } from "resources/index"
+import { Logo, PooCoin, DexTool } from "resources/index"
 import "./style.scss"
 
 const Navbar = () => (
@@ -30,6 +30,15 @@ const Navbar = () => (
         </a>
         <a
           className="flex"
+          href="https://github.com/CoryITpro/catemoon-token-bep20"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="github"
+        >
+          <FaGithub />
+        </a>
+        <a
+          className="flex"
           href="https://poocoin.app/tokens/0x1Ffeb0B5df9B876d1C3689eEDbea392F1652cF8A"
           target="_blank"
           rel="noreferrer"
@@ -39,12 +48,12 @@ const Navbar = () => (
         </a>
         <a
           className="flex"
-          href="https://github.com/CoryITpro/catemoon-token-bep20"
+          href="https://www.dextools.io/app/bsc/pair-explorer/0x28dec62114317565c4856d1c352c3b90aee4e0f9"
           target="_blank"
           rel="noreferrer"
-          aria-label="github"
+          aria-label="dextool"
         >
-          <FaGithub />
+          <img src={DexTool} alt="dextool" />
         </a>
       </div>
     </div>

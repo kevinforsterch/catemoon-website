@@ -24,11 +24,11 @@ const Hero = ({ holders, price, marketcap = 0 }) => (
           </a>
           <a
             className="flex"
-            href={`https://pancakeswap.finance/swap?inputCurrency=${wBNBAddress}&outputCurrency=${catemoonAddress}`}
+            href={`https://t.me/CateMoonBot`}
             target="_blank"
             rel="noreferrer"
           >
-            Pancakeswap
+            Get Airdrops!
           </a>
         </div>
       </div>

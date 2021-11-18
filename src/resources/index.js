@@ -1,5 +1,6 @@
 import Logo from "./Logos/logo.png"
 import { ReactComponent as PooCoin } from "./Logos/poocoin-logo.svg"
+import DexTool from "./Logos/dextools-logo.png"
 import { ReactComponent as CateHero } from "./Cates/cate-1.svg"
 import { ReactComponent as CateMoon } from "./Cates/cate-2.svg"
 import { ReactComponent as CateBalloon } from "./Cates/cate-3.svg"
@@ -23,6 +24,7 @@ import Organic from "./Roadmap/organic.png"
 export {
   Logo,
   PooCoin,
+  DexTool,
   CateHero,
   CateMoon,
   CateBalloon,
