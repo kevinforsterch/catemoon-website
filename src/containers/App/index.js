@@ -1,10 +1,15 @@
 import { Suspense, lazy } from "react"
+import { BrowserRouter } from "react-router-dom"
+
 import Loading from "components/Loading"
-const Dashboard = lazy(() => import("containers/Dashboard"))
+
+const AppRouter = lazy(() => import("router"))
 
 const App = () => (
   <Suspense fallback={<Loading />}>
-    <Dashboard />
+    <BrowserRouter>
+      <AppRouter />
+    </BrowserRouter>
   </Suspense>
 )
 

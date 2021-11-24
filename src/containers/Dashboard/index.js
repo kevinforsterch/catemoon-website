@@ -1,10 +1,8 @@
 import { useState, useEffect } from "react"
-import Navbar from "components/Navbar"
 import Hero from "components/Hero"
 import Info from "components/Info"
 import Tokenomics from "components/Tokenomics"
 import Roadmap from "components/Roadmap"
-import Footer from "components/Footer"
 import axios from "axios"
 import { bscScanApiKey, catemoonAddress } from "constants/index"
 
@@ -57,12 +55,10 @@ const Dashboard = () => {
 
   return (
     <>
-      <Navbar />
       <Hero holders={holders} price={price} marketcap={marketcap} />
       <Info />
       <Tokenomics />
       <Roadmap />
-      <Footer />
     </>
   )
 }
