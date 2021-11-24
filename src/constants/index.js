@@ -8,3 +8,5 @@ export const AppRoutes = {
   ComingSoon: "/coming-soon",
   NotFound: "*",
 }
+
+export const chainId = "0x38"

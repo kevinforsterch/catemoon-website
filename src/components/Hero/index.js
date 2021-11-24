@@ -24,7 +24,7 @@ const Hero = ({ holders, price, marketcap = 0 }) => (
           >
             Pancakeswap
           </a>
-          <Link className="flex" to={AppRoutes.ComingSoon}>
+          <Link className="flex" to={AppRoutes.Verify}>
             Get Airdrops!
           </Link>
         </div>

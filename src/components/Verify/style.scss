@@ -1,0 +1,188 @@
+@import "../../styles/variable.scss";
+
+.verify {
+  width: 100%;
+  justify-content: center;
+  min-height: calc(100vh - 283.25px);
+  background-image: url("../../resources/header.png");
+  background-position: top center;
+  background-size: 100% 100px;
+  background-repeat: no-repeat;
+
+  @media (max-width: 768px) {
+    min-height: calc(100vh - 262.69px);
+    background-size: contain;
+  }
+
+  &-wrapper {
+    margin: 128px 0 32px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &-main {
+    width: 100%;
+    align-items: center;
+    max-width: 600px;
+    padding: 32px;
+    border-radius: 24px;
+    background-color: rgba($color: $gray, $alpha: 0.3);
+    border: 1px solid rgba($color: $gray, $alpha: 0.5);
+    box-shadow: 0 0 16px rgba($color: $gray, $alpha: 0.5);
+
+    @media (max-width: 768px) {
+      padding: 16px;
+      border-radius: 16px;
+    }
+
+    &-wallet {
+      width: 100%;
+      justify-content: flex-end;
+      margin-bottom: 16px;
+
+      & > button {
+        width: 180px;
+        border: none;
+        text-align: center;
+        font-family: "Nunito", sans-serif !important;
+        padding: 8px 0;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        color: $white;
+        border-radius: 64px;
+        box-shadow: inset 0 0 8px rgba($color: $blue-twitter, $alpha: 0.8),
+          2px 8px 16px 4px rgba($color: $blue-twitter, $alpha: 0.15);
+        background-image: linear-gradient(
+          -20deg,
+          $blue-twitter 0%,
+          $blue-telegram
+        );
+
+        &:hover {
+          box-shadow: inset 0 0 16px rgba($color: $blue-twitter, $alpha: 0.8),
+            2px 16px 16px 4px rgba($color: $blue-twitter, $alpha: 0.15);
+        }
+
+        &:active {
+          box-shadow: inset 0 0 8px rgba($color: $blue-twitter, $alpha: 0.8),
+            2px 8px 16px 4px rgba($color: $blue-twitter, $alpha: 0.15);
+        }
+
+        @media (max-width: 768px) {
+          font-size: 14px;
+          align-self: center;
+          width: 160px;
+        }
+
+        @media (max-width: 425px) {
+          align-self: center;
+          width: 100%;
+        }
+      }
+    }
+
+    &-contents {
+      width: 100%;
+      margin-bottom: 32px;
+
+      & > span {
+        color: $white;
+        font-size: 18px;
+        margin-bottom: 16px;
+
+        @media (max-width: 768px) {
+          font-size: 16px;
+          margin-bottom: 8px;
+        }
+      }
+
+      & > input {
+        min-width: 100%;
+        max-width: 100%;
+        min-height: 40px;
+        max-height: 120px;
+        height: fit-content;
+        text-align: center;
+        padding: 8px 16px;
+        border-radius: 12px;
+        border: 1px solid rgba($color: $gray, $alpha: 0.5);
+        font-size: 16px;
+        font-weight: 500;
+
+        @media (max-width: 768px) {
+          font-size: 14px;
+        }
+      }
+    }
+
+    &-verify {
+      width: 100%;
+
+      & > span {
+        color: $white;
+        font-size: 18px;
+        margin-bottom: 16px;
+
+        @media (max-width: 768px) {
+          font-size: 16px;
+          margin-bottom: 8px;
+        }
+      }
+
+      & > input {
+        width: 100%;
+        padding: 8px 16px;
+        border-radius: 12px;
+        border: 1px solid rgba($color: $gray, $alpha: 0.5);
+        font-size: 16px;
+
+        @media (max-width: 768px) {
+          font-size: 14px;
+        }
+      }
+    }
+
+    & > button {
+      margin-top: 64px;
+      width: 180px;
+      border: none;
+      text-align: center;
+      font-family: "Nunito", sans-serif !important;
+      padding: 8px 0;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      color: $white;
+      border-radius: 64px;
+      box-shadow: inset 0 0 8px rgba($color: $blue-twitter, $alpha: 0.8),
+        2px 8px 16px 4px rgba($color: $blue-twitter, $alpha: 0.15);
+      background-image: linear-gradient(
+        -20deg,
+        $blue-twitter 0%,
+        $blue-telegram
+      );
+
+      &:hover {
+        box-shadow: inset 0 0 16px rgba($color: $blue-twitter, $alpha: 0.8),
+          2px 16px 16px 4px rgba($color: $blue-twitter, $alpha: 0.15);
+      }
+
+      &:active {
+        box-shadow: inset 0 0 8px rgba($color: $blue-twitter, $alpha: 0.8),
+          2px 8px 16px 4px rgba($color: $blue-twitter, $alpha: 0.15);
+      }
+
+      @media (max-width: 768px) {
+        font-size: 14px;
+        align-self: center;
+        width: 160px;
+      }
+
+      @media (max-width: 425px) {
+        align-self: center;
+        width: 100%;
+      }
+    }
+  }
+}
