@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+import { AppRoutes } from "constants/index"
 import { CateHero, PlanetBlue } from "resources/index"
 import { catemoonAddress, wBNBAddress } from "constants/index"
 import "./style.scss"
@@ -22,14 +24,9 @@ const Hero = ({ holders, price, marketcap = 0 }) => (
           >
             Pancakeswap
           </a>
-          <a
-            className="flex"
-            href={`https://t.me/CateMoonBot`}
-            target="_blank"
-            rel="noreferrer"
-          >
+          <Link className="flex" to={AppRoutes.ComingSoon}>
             Get Airdrops!
-          </a>
+          </Link>
         </div>
       </div>
       <div className="hero-image flex">
