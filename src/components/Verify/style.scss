@@ -35,6 +35,13 @@
       border-radius: 16px;
     }
 
+    &:before {
+      content: "Experimental";
+      color: $red;
+      font-weight: bold;
+      margin-bottom: 32px;
+    }
+
     &-wallet {
       width: 100%;
       justify-content: flex-end;
