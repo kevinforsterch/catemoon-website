@@ -43,7 +43,6 @@ const Verify = () => {
 
     switch (name) {
       case "twitter_handler":
-        console.log(e.target.value)
         setTwitterHandler(e.target.value)
         break
       default:

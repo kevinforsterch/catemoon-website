@@ -11,7 +11,10 @@ const Verify = ({
   <div className="verify flex">
     <div className="verify-wrapper container flex">
       <div className="verify-main flex flex-column">
-        <p>Claim your reward</p>
+        <p>
+          This is demo version of verification system and you need to register
+          your address again once it goes public
+        </p>
         <div className="verify-main-wallet flex">
           <button onClick={onConnectWalletHandler}>
             {walletAddress === ""
