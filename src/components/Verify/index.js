@@ -1,9 +1,17 @@
 import "./style.scss"
 
-const Verify = ({ walletAddress, onConnectWalletHandler, verifyCode }) => (
+const Verify = ({
+  walletAddress,
+  onConnectWalletHandler,
+  onChangeHandler,
+  onSubmitVerify,
+  response,
+  verifyCode,
+}) => (
   <div className="verify flex">
     <div className="verify-wrapper container flex">
       <div className="verify-main flex flex-column">
+        <p>Claim your reward</p>
         <div className="verify-main-wallet flex">
           <button onClick={onConnectWalletHandler}>
             {walletAddress === ""
@@ -12,18 +20,30 @@ const Verify = ({ walletAddress, onConnectWalletHandler, verifyCode }) => (
           </button>
         </div>
         <div className="verify-main-contents flex flex-column">
-          <span>Tweet the following text:</span>
-          <input
+          <span>Add your twitter screen name here:</span>
+          {/* <input
             type="text"
             value={`#Catemoon Verification [${verifyCode}]`}
             readOnly
+          /> */}
+          <input
+            name="twitter_handler"
+            type="text"
+            onChange={onChangeHandler}
           />
+          <p
+            className={
+              response.message === ""
+                ? "hidden"
+                : response.status
+                ? "normal"
+                : "error"
+            }
+          >
+            {response.message}
+          </p>
         </div>
-        <div className="verify-main-verify flex flex-column">
-          <span>Paste the link to the tweet you just posted here:</span>
-          <input type="text" placeholder="https://twitter.com/abced" />
-        </div>
-        <button>Confirm</button>
+        <button onClick={onSubmitVerify}>Confirm</button>
       </div>
     </div>
   </div>
