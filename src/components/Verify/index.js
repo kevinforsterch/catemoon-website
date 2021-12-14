@@ -21,7 +21,7 @@ const Verify = ({
             : walletAddress.slice(0, 6) + " ... " + walletAddress.slice(38)}
         </button>
         <div className="verify-main-contents flex flex-column">
-          <span>Add your twitter screen name here:</span>
+          <span>Add your twitter screen name here without @:</span>
           {/* <input
             type="text"
             value={`#Catemoon Verification [${verifyCode}]`}

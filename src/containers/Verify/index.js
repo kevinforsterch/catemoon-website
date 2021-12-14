@@ -43,7 +43,8 @@ const Verify = () => {
 
     switch (name) {
       case "twitter_handler":
-        setTwitterHandler(e.target.value)
+        let screen_name = e.target.value
+        setTwitterHandler(screen_name.replaceAll("@", ""))
         break
       default:
         break
