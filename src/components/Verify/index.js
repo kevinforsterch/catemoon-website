@@ -12,8 +12,8 @@ const Verify = ({
     <div className="verify-wrapper container flex">
       <div className="verify-main flex flex-column">
         <p>
-          This is demo version of verification system and you need to register
-          your address again once it goes public
+          This is the demo version of our verification system and you need to
+          register your address again once it's fully implemented.
         </p>
         <button onClick={onConnectWalletHandler}>
           {walletAddress === ""
