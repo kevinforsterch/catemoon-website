@@ -15,13 +15,11 @@ const Verify = ({
           This is demo version of verification system and you need to register
           your address again once it goes public
         </p>
-        <div className="verify-main-wallet flex">
-          <button onClick={onConnectWalletHandler}>
-            {walletAddress === ""
-              ? "Connect Wallet"
-              : walletAddress.slice(0, 6) + " ... " + walletAddress.slice(38)}
-          </button>
-        </div>
+        <button onClick={onConnectWalletHandler}>
+          {walletAddress === ""
+            ? "Connect Wallet"
+            : walletAddress.slice(0, 6) + " ... " + walletAddress.slice(38)}
+        </button>
         <div className="verify-main-contents flex flex-column">
           <span>Add your twitter screen name here:</span>
           {/* <input
