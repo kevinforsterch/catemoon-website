@@ -1,14 +1,16 @@
+import { Link } from "react-router-dom"
 import { FaTelegram, FaTwitter, FaGithub } from "react-icons/fa"
 import { Logo, PooCoin, DexTool } from "resources/index"
+import { AppRoutes } from "constants/index"
 import "./style.scss"
 
 const Navbar = () => (
   <div className="navbar flex">
     <div className="navbar-wrapper container flex">
-      <div className="navbar-logo flex">
+      <Link className="navbar-logo flex" to={AppRoutes.Home}>
         <img src={Logo} alt="" />
         <span>CATEMOON</span>
-      </div>
+      </Link>
       <div className="navbar-socials flex">
         <a
           className="flex"
