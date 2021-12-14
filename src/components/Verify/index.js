@@ -1,3 +1,4 @@
+import { Rocket, PlanetOrangeSmall } from "resources/index"
 import "./style.scss"
 
 const Verify = ({
@@ -9,6 +10,8 @@ const Verify = ({
   verifyCode,
 }) => (
   <div className="verify flex">
+    <Rocket />
+    <PlanetOrangeSmall />
     <div className="verify-wrapper container flex">
       <div className="verify-main flex flex-column">
         <p>
